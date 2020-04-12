@@ -7,7 +7,9 @@
 <div class="container-fluid">
     <div class="row-fluid">
       <div class="span12">
-        <a href="/traffics/create" class="btn btn-primary">+ Создать</a>
+        @if(!Auth::guest())
+          <a href="/traffics/create" class="btn btn-primary">+ Создать</a>
+        @endif
         <div class="widget-box">
           <div class="widget-title">
              <span class="icon"><i class="icon-th"></i></span> 

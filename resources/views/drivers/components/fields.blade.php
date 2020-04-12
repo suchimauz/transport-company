@@ -10,7 +10,7 @@
 <div class="control-group">
     <label class="control-label">Стаж :</label>
     <div class="controls">
-        <input type="text" class="span11" name="experience" placeholder="Введите стаж работы водителя в годах"
+        <input type="number" class="span11" name="experience" placeholder="Введите стаж работы водителя в годах"
             @if(isset($driver->experience)) value="{{ $driver->experience }}" @endif 
             required
         />
